@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace Console_Game
 {
-  public partial class Form1 : Form
+  public partial class Options : Form
   {
-    public Form1()
+    public Options()
     {
       InitializeComponent();
     }
-
   }
 }
