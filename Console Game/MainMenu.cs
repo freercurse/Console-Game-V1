@@ -12,10 +12,11 @@ namespace Console_Game
 {
   public partial class MainMenu : Form
   {
+    private Player player1;
     public MainMenu()
     {
       InitializeComponent();
-      Player player = new();
+      player1 = new();
     }
 
     private void Form1_Load(object sender, EventArgs e)
@@ -25,7 +26,7 @@ namespace Console_Game
 
     private void OPButton_Click(object sender, EventArgs e)
     {
-      Form Op = new Options();
+      Form Op = new Options(player1);
       Op.Show();      
     }
 
