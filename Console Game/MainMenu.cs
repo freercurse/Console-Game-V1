@@ -15,7 +15,7 @@ namespace Console_Game
     public MainMenu()
     {
       InitializeComponent();
-      Player player;
+      Player player = new();
     }
 
     private void Form1_Load(object sender, EventArgs e)
@@ -32,6 +32,11 @@ namespace Console_Game
     private void QButton_Click(object sender, EventArgs e)
     {
       Application.Exit();
+    }
+
+    private void NGButton_Click(object sender, EventArgs e)
+    {
+
     }
   }
 }

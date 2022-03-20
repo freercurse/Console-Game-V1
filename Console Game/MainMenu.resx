@@ -61,7 +61,7 @@
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZ8AAABECAYAAABebDjMAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAAAAd0SU1FB+YDExcNKwm+4mYAAL5rSURBVHhe7b0HmKRXcS7M7k7OOeeeDjPT3dNp
+        DwAACw8BkvkDpQAAAAd0SU1FB+YDExcNKwm+4mYAAL5rSURBVHhe7b0HmKRXcS7M7k7OOeeeDjPT3dNp
         Znp6Uk/OOe/szszmnHcVVlkIiWDA2QbbRF+DsU0yNpjrCPg64HARCMlGBGOS4gJCsEig+t+3Tn8zs6sV
         SELY9/53+3nO0+n7zndCVb1VderUedX11/XX9df11/XX9df11/XX9df11/XX9df11/XX9df11/XX9df1
         1/XX9df11/XX9df11/XX9df11/XX9df11/XX/9UvuVO2xT7+//7Fvlol9tPLfm2t6+oSu+T662W+rjWm
@@ -877,4 +877,16 @@
         x4OTdNCHe7QAAAAASUVORK5CYII=
 </value>
   </data>
+  <metadata name="NGButton.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="LGButton.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="OPButton.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="QButton.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>

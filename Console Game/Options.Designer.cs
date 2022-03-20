@@ -31,9 +31,9 @@ namespace Console_Game
     {
       this.CButton = new System.Windows.Forms.Button();
       this.SeedLabel = new System.Windows.Forms.Label();
-      this.textBox1 = new System.Windows.Forms.TextBox();
+      this.SeedTB = new System.Windows.Forms.TextBox();
       this.label1 = new System.Windows.Forms.Label();
-      this.comboBox1 = new System.Windows.Forms.ComboBox();
+      this.DifficultyCB = new System.Windows.Forms.ComboBox();
       this.ASButton = new System.Windows.Forms.Button();
       this.ADButton = new System.Windows.Forms.Button();
       this.SuspendLayout();
@@ -46,6 +46,7 @@ namespace Console_Game
       this.CButton.TabIndex = 0;
       this.CButton.Text = "Close";
       this.CButton.UseVisualStyleBackColor = true;
+      this.CButton.Click += new System.EventHandler(this.CButton_Click);
       // 
       // SeedLabel
       // 
@@ -56,12 +57,12 @@ namespace Console_Game
       this.SeedLabel.TabIndex = 1;
       this.SeedLabel.Text = "Seed :";
       // 
-      // textBox1
+      // SeedTB
       // 
-      this.textBox1.Location = new System.Drawing.Point(85, 26);
-      this.textBox1.Name = "textBox1";
-      this.textBox1.Size = new System.Drawing.Size(100, 23);
-      this.textBox1.TabIndex = 2;
+      this.SeedTB.Location = new System.Drawing.Point(85, 26);
+      this.SeedTB.Name = "SeedTB";
+      this.SeedTB.Size = new System.Drawing.Size(100, 23);
+      this.SeedTB.TabIndex = 2;
       // 
       // label1
       // 
@@ -72,13 +73,18 @@ namespace Console_Game
       this.label1.TabIndex = 3;
       this.label1.Text = "Difficulty :";
       // 
-      // comboBox1
+      // DifficultyCB
       // 
-      this.comboBox1.FormattingEnabled = true;
-      this.comboBox1.Location = new System.Drawing.Point(85, 55);
-      this.comboBox1.Name = "comboBox1";
-      this.comboBox1.Size = new System.Drawing.Size(100, 23);
-      this.comboBox1.TabIndex = 4;
+      this.DifficultyCB.FormattingEnabled = true;
+      this.DifficultyCB.Items.AddRange(new object[] {
+            "Impossible",
+            "Hard",
+            "Medium",
+            "Easy"});
+      this.DifficultyCB.Location = new System.Drawing.Point(85, 55);
+      this.DifficultyCB.Name = "DifficultyCB";
+      this.DifficultyCB.Size = new System.Drawing.Size(100, 23);
+      this.DifficultyCB.TabIndex = 4;
       // 
       // ASButton
       // 
@@ -88,6 +94,7 @@ namespace Console_Game
       this.ASButton.TabIndex = 5;
       this.ASButton.Text = "Apply";
       this.ASButton.UseVisualStyleBackColor = true;
+      this.ASButton.Click += new System.EventHandler(this.ASButton_Click);
       // 
       // ADButton
       // 
@@ -97,20 +104,21 @@ namespace Console_Game
       this.ADButton.TabIndex = 6;
       this.ADButton.Text = "Apply";
       this.ADButton.UseVisualStyleBackColor = true;
+      this.ADButton.Click += new System.EventHandler(this.ADButton_Click);
       // 
-      // Form2
+      // Options
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.ClientSize = new System.Drawing.Size(297, 132);
       this.Controls.Add(this.ADButton);
       this.Controls.Add(this.ASButton);
-      this.Controls.Add(this.comboBox1);
+      this.Controls.Add(this.DifficultyCB);
       this.Controls.Add(this.label1);
-      this.Controls.Add(this.textBox1);
+      this.Controls.Add(this.SeedTB);
       this.Controls.Add(this.SeedLabel);
       this.Controls.Add(this.CButton);
-      this.Name = "Form2";
+      this.Name = "Options";
       this.Text = "Options";
       this.ResumeLayout(false);
       this.PerformLayout();
@@ -121,9 +129,9 @@ namespace Console_Game
 
     private System.Windows.Forms.Button CButton;
     private System.Windows.Forms.Label SeedLabel;
-    private System.Windows.Forms.TextBox textBox1;
+    private System.Windows.Forms.TextBox SeedTB;
     private System.Windows.Forms.Label label1;
-    private System.Windows.Forms.ComboBox comboBox1;
+    private System.Windows.Forms.ComboBox DifficultyCB;
     private System.Windows.Forms.Button ASButton;
     private System.Windows.Forms.Button ADButton;
   }

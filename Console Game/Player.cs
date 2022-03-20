@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace Console_Game
 {
-  class Player
+  public class Player
   {
+    public int Difficulty;
+    public int Seed;
     public int Health;
     public int Money;
     public double Luck;
@@ -39,6 +41,15 @@ namespace Console_Game
       }
 
       return ("fine you loser");
+    }
+
+    public void SetDifficulty(int D)
+    {
+      this.Difficulty = D;
+    }
+    public void SetSeed(int S)
+    {
+      this.Seed = S;
     }
 
     public override string ToString()

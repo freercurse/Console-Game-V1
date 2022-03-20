@@ -55,10 +55,12 @@ namespace Console_Game
       this.NGButton.TabIndex = 1;
       this.NGButton.Text = "New Game";
       this.NGButton.UseVisualStyleBackColor = true;
+      this.NGButton.Click += new System.EventHandler(this.NGButton_Click);
       // 
       // LGButton
       // 
-      this.LGButton.Location = new System.Drawing.Point(155, 195);
+      this.LGButton.Enabled = false;
+      this.LGButton.Location = new System.Drawing.Point(155, 194);
       this.LGButton.Name = "LGButton";
       this.LGButton.Size = new System.Drawing.Size(118, 30);
       this.LGButton.TabIndex = 2;
