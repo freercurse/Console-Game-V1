@@ -15,11 +15,12 @@ namespace Console_Game
     public MainMenu()
     {
       InitializeComponent();
+      Player player;
     }
 
     private void Form1_Load(object sender, EventArgs e)
     {
-
+      
     }
 
     private void OPButton_Click(object sender, EventArgs e)
