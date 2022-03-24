@@ -46,7 +46,7 @@ namespace Console_Game
 
     private void IterateDay()
     {
-      Console.WriteLine("Porbably should perform some Daily modifier changes");
+      Console.WriteLine("Probably should perform some Daily modifier changes");
     }
   }    
 }

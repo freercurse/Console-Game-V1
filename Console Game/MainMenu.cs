@@ -37,7 +37,9 @@ namespace Console_Game
 
     private void NGButton_Click(object sender, EventArgs e)
     {
-
+      Form CharCre = new CharacterCreation(player1,this);
+      CharCre.Show();
+      this.Hide();
     }
   }
 }

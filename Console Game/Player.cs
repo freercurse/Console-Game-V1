@@ -8,6 +8,7 @@ namespace Console_Game
 {
   public class Player
   {
+    public string Name;
     public int Difficulty;
     public int Seed;
     public int Health;
@@ -26,6 +27,11 @@ namespace Console_Game
       this.Luck = L;
       this.Strength = S;
       this.Divine = D;
+    }
+    
+    public void SetName(string name)
+    {
+      this.Name = name;
     }
 
     protected String ToggleGod()
