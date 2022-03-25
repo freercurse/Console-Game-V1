@@ -8,15 +8,16 @@ namespace Console_Game
 {
   public class Player
   {
-    public string Name;
-    public int Difficulty;
-    public int Seed;
-    public int Health;
-    public int Money;
-    public double Luck;
-    public int Strength;
-    public double Divine;
-    public Boolean God;
+    private string Name;
+    private string Face;
+    private int Difficulty;    
+    private int Seed;
+    private int Health;
+    private int Money;
+    private double Luck;
+    private int Strength;
+    private double Divine;
+    private Boolean God;
 
 
 
@@ -47,6 +48,11 @@ namespace Console_Game
       }
 
       return ("fine you loser");
+    }
+
+    public void SetFace(string face)
+    {
+      this.Face = face;
     }
 
     public void SetDifficulty(int D)

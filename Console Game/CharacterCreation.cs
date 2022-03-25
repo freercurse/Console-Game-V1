@@ -35,6 +35,8 @@ namespace Console_Game
       int M = Convert.ToInt32(textBoxHealth.Text);
       double D = rn.NextDouble() * 4;
 
+      player1.SetFace(picture1.Name);
+
       if(H+L+S+M == 8)
       {
         player1.SetStats(H, M, L + rn.Next(0, 3), S, D);
