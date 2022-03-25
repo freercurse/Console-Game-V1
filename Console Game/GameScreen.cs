@@ -12,14 +12,21 @@ namespace Console_Game
 {
   public partial class GameScreen : Form
   {
-    public GameScreen()
+
+    private Player player;
+    public GameScreen(Form mm, Player player1)
     {
       InitializeComponent();
+      player = player1;
+      setValues();
     }
 
-    private void label6_Click(object sender, EventArgs e)
+    private void setValues()
     {
-
+      progressBarHealth.Value = player.Health;
+      progressBarStrength.Value = player.Strength;
+      progressBarLuck.Value = player.Luck;
+      progressBarMoney.Value = player.Money;
     }
   }
 }

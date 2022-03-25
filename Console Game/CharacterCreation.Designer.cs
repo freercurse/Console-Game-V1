@@ -34,7 +34,6 @@ namespace Console_Game
       this.textBoxName = new System.Windows.Forms.TextBox();
       this.StartButton = new System.Windows.Forms.Button();
       this.pictureBox1 = new System.Windows.Forms.PictureBox();
-      this.picture1 = new System.Windows.Forms.RadioButton();
       this.textBoxHealth = new System.Windows.Forms.TextBox();
       this.labelHealth = new System.Windows.Forms.Label();
       this.textBoxStrength = new System.Windows.Forms.TextBox();
@@ -45,7 +44,6 @@ namespace Console_Game
       this.labelMoney = new System.Windows.Forms.Label();
       this.buttonBack = new System.Windows.Forms.Button();
       this.label1 = new System.Windows.Forms.Label();
-      this.statusStrip1 = new System.Windows.Forms.StatusStrip();
       ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
       this.SuspendLayout();
       // 
@@ -78,24 +76,12 @@ namespace Console_Game
       // pictureBox1
       // 
       this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-      this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+      this.pictureBox1.Location = new System.Drawing.Point(129, 29);
       this.pictureBox1.Name = "pictureBox1";
-      this.pictureBox1.Size = new System.Drawing.Size(120, 116);
-      this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+      this.pictureBox1.Size = new System.Drawing.Size(240, 240);
+      this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
       this.pictureBox1.TabIndex = 3;
       this.pictureBox1.TabStop = false;
-      // 
-      // picture1
-      // 
-      this.picture1.AutoSize = true;
-      this.picture1.Location = new System.Drawing.Point(12, 134);
-      this.picture1.Name = "picture1";
-      this.picture1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-      this.picture1.Size = new System.Drawing.Size(37, 19);
-      this.picture1.TabIndex = 4;
-      this.picture1.TabStop = true;
-      this.picture1.Text = ": 1";
-      this.picture1.UseVisualStyleBackColor = true;
       // 
       // textBoxHealth
       // 
@@ -181,20 +167,11 @@ namespace Console_Game
       this.label1.TabIndex = 16;
       this.label1.Text = "Maximum Points: 8";
       // 
-      // statusStrip1
-      // 
-      this.statusStrip1.Location = new System.Drawing.Point(0, 455);
-      this.statusStrip1.Name = "statusStrip1";
-      this.statusStrip1.Size = new System.Drawing.Size(532, 22);
-      this.statusStrip1.TabIndex = 17;
-      this.statusStrip1.Text = "statusStrip1";
-      // 
       // CharacterCreation
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.ClientSize = new System.Drawing.Size(532, 477);
-      this.Controls.Add(this.statusStrip1);
       this.Controls.Add(this.label1);
       this.Controls.Add(this.buttonBack);
       this.Controls.Add(this.textBoxMoney);
@@ -205,7 +182,6 @@ namespace Console_Game
       this.Controls.Add(this.labelStrength);
       this.Controls.Add(this.textBoxHealth);
       this.Controls.Add(this.labelHealth);
-      this.Controls.Add(this.picture1);
       this.Controls.Add(this.pictureBox1);
       this.Controls.Add(this.StartButton);
       this.Controls.Add(this.textBoxName);
@@ -225,7 +201,6 @@ namespace Console_Game
     private System.Windows.Forms.TextBox textBoxName;
     private System.Windows.Forms.Button StartButton;
     private System.Windows.Forms.PictureBox pictureBox1;
-    private System.Windows.Forms.RadioButton picture1;
     private System.Windows.Forms.TextBox textBoxHealth;
     private System.Windows.Forms.Label labelHealth;
     private System.Windows.Forms.TextBox textBoxStrength;
@@ -236,6 +211,5 @@ namespace Console_Game
     private System.Windows.Forms.Label labelMoney;
     private System.Windows.Forms.Button buttonBack;
     private System.Windows.Forms.Label label1;
-    private System.Windows.Forms.StatusStrip statusStrip1;
   }
 }
