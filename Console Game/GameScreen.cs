@@ -43,7 +43,7 @@ namespace Console_Game
 
     private void buttonWeight_Click(object sender, EventArgs e)
     {
-      if(player.Energy >= 20)
+      if(progressBarEnergy.Value >= 20)
       {
         StrengthMG sg = new StrengthMG(player,gst);
         sg.Show();
