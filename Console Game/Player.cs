@@ -8,17 +8,22 @@ namespace Console_Game
 {
   public class Player
   {
-    private string Name;
+    public string Name;
     private string Face;
     private int Difficulty;    
     private int Seed;
     public int Health;
+    public int Energy = 100;
     public int Money;
     public int Luck;
     public int Strength;
     private double Divine;
     private Boolean God;
 
+    private int LProgress =0;
+    private int HProgress =0;
+    private int SProgress =0;
+    private int MProgress =0;
 
 
     public void SetStats(int H, int M, int L, int S, double D)
@@ -62,6 +67,42 @@ namespace Console_Game
     {
       this.Seed = S;
     }    
+
+    public void iterateProgress(string type,int value)
+    {
+      switch (type)
+      {
+        case "H":
+          this.HProgress += value;
+          break;
+        case "M":
+          this.MProgress += value;
+          break;
+        case "S":
+          this.SProgress += value;
+          break;
+        case "L":
+          this.LProgress += value;
+          break;
+      }
+    }
+    
+    public int getProgress(string type)
+    {
+      switch (type)
+      {
+        case "H":
+          return this.HProgress;          
+        case "M":
+          return this.MProgress;
+        case "S":
+          return this.SProgress;
+        case "L":
+          return this.LProgress;
+      }
+
+      return -1;
+    }
 
     public override string ToString()
     {

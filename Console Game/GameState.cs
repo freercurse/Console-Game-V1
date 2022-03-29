@@ -6,37 +6,40 @@ using System.Threading.Tasks;
 
 namespace Console_Game
 {
-  class GameState
+  public class GameState
   {
-    public int Time;
-    public int Day;
+    private readonly Player player1;
+
+    public int AM = 1;
+    public int AB = 1;
+    public int AC = 1;
+    public int AW = 1;
+    public int AV = 1;
+    
+    public GameState(Player player)
+    {
+      player1 = player;
+    }
+
+    public int Day = 0;
     public double DailyLuck;
-    public int Week;
+    public int Week = 0;
     public double WeeklyInterest;
     public int WinningBetlimit;
 
-    public void IterateTime(Boolean Sleep)
-    {
-      if(this.Time == 23 || Sleep == true)
+    public void IterateTime() 
+    {     
+      if(this.Day != 7)
       {
-        this.Time = 10;
-
-        if(this.Day != 7)
-        {
-          this.Day++;
-        } else
-        {
-          this.Day = 1;
-          this.Week++;
-          this.IterateWeek();
-        }
-
-        this.IterateDay();
-
+        this.Day++;
       } else
       {
-        this.Time++;
+        this.Day = 0;
+        this.Week++;
+        this.IterateWeek();
       }
+
+      this.IterateDay();      
     }
 
     private void IterateWeek()
@@ -46,6 +49,7 @@ namespace Console_Game
 
     private void IterateDay()
     {
+      player1.Energy = 100;
       Console.WriteLine("Probably should perform some Daily modifier changes");
     }
   }    

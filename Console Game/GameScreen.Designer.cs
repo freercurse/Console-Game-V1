@@ -51,11 +51,15 @@ namespace Console_Game
       this.progressBarLuck = new System.Windows.Forms.ProgressBar();
       this.progressBarMoney = new System.Windows.Forms.ProgressBar();
       this.groupBoxApartment = new System.Windows.Forms.GroupBox();
-      this.label2 = new System.Windows.Forms.Label();
+      this.labelDay = new System.Windows.Forms.Label();
       this.buttonSleep = new System.Windows.Forms.Button();
       this.buttonWeight = new System.Windows.Forms.Button();
       this.buttonEat = new System.Windows.Forms.Button();
       this.buttonGame = new System.Windows.Forms.Button();
+      this.labelDayT = new System.Windows.Forms.Label();
+      this.labelWeekT = new System.Windows.Forms.Label();
+      this.labelWeek = new System.Windows.Forms.Label();
+      this.labelName = new System.Windows.Forms.Label();
       ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
       this.groupBoxApartment.SuspendLayout();
@@ -93,7 +97,7 @@ namespace Console_Game
       // 
       this.label1.AutoSize = true;
       this.label1.Font = new System.Drawing.Font("Showcard Gothic", 36F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-      this.label1.Location = new System.Drawing.Point(23, 19);
+      this.label1.Location = new System.Drawing.Point(92, 9);
       this.label1.Name = "label1";
       this.label1.Size = new System.Drawing.Size(334, 60);
       this.label1.TabIndex = 3;
@@ -256,30 +260,30 @@ namespace Console_Game
       this.groupBoxApartment.Controls.Add(this.labelBed);
       this.groupBoxApartment.Controls.Add(this.labelWeights);
       this.groupBoxApartment.Controls.Add(this.labelCards);
-      this.groupBoxApartment.Controls.Add(this.label2);
-      this.groupBoxApartment.Location = new System.Drawing.Point(209, 3);
+      this.groupBoxApartment.Location = new System.Drawing.Point(209, 25);
       this.groupBoxApartment.Name = "groupBoxApartment";
-      this.groupBoxApartment.Size = new System.Drawing.Size(484, 189);
+      this.groupBoxApartment.Size = new System.Drawing.Size(484, 167);
       this.groupBoxApartment.TabIndex = 21;
       this.groupBoxApartment.TabStop = false;
       // 
-      // label2
+      // labelDay
       // 
-      this.label2.AutoSize = true;
-      this.label2.Location = new System.Drawing.Point(363, 18);
-      this.label2.Name = "label2";
-      this.label2.Size = new System.Drawing.Size(33, 15);
-      this.label2.TabIndex = 4;
-      this.label2.Text = "Time";
+      this.labelDay.AutoSize = true;
+      this.labelDay.Location = new System.Drawing.Point(666, 3);
+      this.labelDay.Name = "labelDay";
+      this.labelDay.Size = new System.Drawing.Size(27, 15);
+      this.labelDay.TabIndex = 4;
+      this.labelDay.Text = "Day";
       // 
       // buttonSleep
       // 
-      this.buttonSleep.Location = new System.Drawing.Point(232, 216);
+      this.buttonSleep.Location = new System.Drawing.Point(232, 212);
       this.buttonSleep.Name = "buttonSleep";
       this.buttonSleep.Size = new System.Drawing.Size(99, 82);
       this.buttonSleep.TabIndex = 22;
       this.buttonSleep.Text = "Sleep";
       this.buttonSleep.UseVisualStyleBackColor = true;
+      this.buttonSleep.Click += new System.EventHandler(this.buttonSleep_Click);
       // 
       // buttonWeight
       // 
@@ -289,6 +293,7 @@ namespace Console_Game
       this.buttonWeight.TabIndex = 23;
       this.buttonWeight.Text = "Weight";
       this.buttonWeight.UseVisualStyleBackColor = true;
+      this.buttonWeight.Click += new System.EventHandler(this.buttonWeight_Click);
       // 
       // buttonEat
       // 
@@ -308,17 +313,58 @@ namespace Console_Game
       this.buttonGame.Text = "Dice Game";
       this.buttonGame.UseVisualStyleBackColor = true;
       // 
+      // labelDayT
+      // 
+      this.labelDayT.AutoSize = true;
+      this.labelDayT.Location = new System.Drawing.Point(602, 3);
+      this.labelDayT.Name = "labelDayT";
+      this.labelDayT.Size = new System.Drawing.Size(33, 15);
+      this.labelDayT.TabIndex = 26;
+      this.labelDayT.Text = "Day :";
+      // 
+      // labelWeekT
+      // 
+      this.labelWeekT.AutoSize = true;
+      this.labelWeekT.Location = new System.Drawing.Point(475, 3);
+      this.labelWeekT.Name = "labelWeekT";
+      this.labelWeekT.Size = new System.Drawing.Size(42, 15);
+      this.labelWeekT.TabIndex = 28;
+      this.labelWeekT.Text = "Week :";
+      // 
+      // labelWeek
+      // 
+      this.labelWeek.AutoSize = true;
+      this.labelWeek.Location = new System.Drawing.Point(539, 3);
+      this.labelWeek.Name = "labelWeek";
+      this.labelWeek.Size = new System.Drawing.Size(36, 15);
+      this.labelWeek.TabIndex = 27;
+      this.labelWeek.Text = "Week";
+      // 
+      // labelName
+      // 
+      this.labelName.AutoSize = true;
+      this.labelName.Location = new System.Drawing.Point(219, 7);
+      this.labelName.Name = "labelName";
+      this.labelName.Size = new System.Drawing.Size(38, 15);
+      this.labelName.TabIndex = 29;
+      this.labelName.Text = "label2";
+      // 
       // GameScreen
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.ClientSize = new System.Drawing.Size(705, 600);
+      this.Controls.Add(this.labelName);
+      this.Controls.Add(this.labelWeekT);
+      this.Controls.Add(this.labelWeek);
+      this.Controls.Add(this.labelDayT);
       this.Controls.Add(this.buttonGame);
       this.Controls.Add(this.buttonEat);
       this.Controls.Add(this.buttonWeight);
       this.Controls.Add(this.buttonSleep);
       this.Controls.Add(this.groupBoxApartment);
       this.Controls.Add(this.progressBarMoney);
+      this.Controls.Add(this.labelDay);
       this.Controls.Add(this.progressBarLuck);
       this.Controls.Add(this.progressBarStrength);
       this.Controls.Add(this.progressBarHealth);
@@ -366,10 +412,14 @@ namespace Console_Game
     private System.Windows.Forms.ProgressBar progressBarLuck;
     private System.Windows.Forms.ProgressBar progressBarMoney;
     private System.Windows.Forms.GroupBox groupBoxApartment;
-    private System.Windows.Forms.Label label2;
+    private System.Windows.Forms.Label labelDay;
     private System.Windows.Forms.Button buttonSleep;
     private System.Windows.Forms.Button buttonWeight;
     private System.Windows.Forms.Button buttonEat;
     private System.Windows.Forms.Button buttonGame;
+    private System.Windows.Forms.Label labelDayT;
+    private System.Windows.Forms.Label labelWeekT;
+    private System.Windows.Forms.Label labelWeek;
+    private System.Windows.Forms.Label labelName;
   }
 }

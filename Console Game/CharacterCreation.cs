@@ -24,7 +24,7 @@ namespace Console_Game
       player1 = player;
       rn = new Random();
       MM = mm;
-      GS = new GameScreen(mm,player);      
+      GST = new GameState(player1);
     }  
 
     private void CharacterCreation_Load(object sender, EventArgs e)
@@ -44,7 +44,8 @@ namespace Console_Game
       if(H+L+S+M == 8)
       {
         player1.SetStats(H, M, L + rn.Next(0, 3), S, D);
-        player1.SetName(textBoxName.Text);        
+        player1.SetName(textBoxName.Text);
+        GS = new GameScreen(MM, player1, GST);
         GS.Show();
         this.Close();
       } else
