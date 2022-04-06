@@ -58,5 +58,23 @@ namespace Console_Game
       }
       
     }
+
+    private void buttonGame_Click(object sender, EventArgs e)
+    {
+      if (progressBarEnergy.Value >= 20)
+      {
+        CardMG cg = new CardMG(player, gst);
+        cg.Show();
+        progressBarEnergy.Step = -20;
+        progressBarEnergy.PerformStep();
+        progressBarEnergy.Step = -10;
+      }
+      else
+      {
+        MessageBox.Show("You are so tired you cant even pick up the cards before fainting", "Fainted");
+        gst.IterateTime();
+        setValues();
+      }
+    }
   }
 }

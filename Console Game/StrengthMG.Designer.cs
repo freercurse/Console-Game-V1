@@ -42,11 +42,11 @@ namespace Console_Game
       // 
       this.label1.AutoSize = true;
       this.label1.Font = new System.Drawing.Font("Snap ITC", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-      this.label1.Location = new System.Drawing.Point(194, 24);
+      this.label1.Location = new System.Drawing.Point(103, 50);
       this.label1.Name = "label1";
-      this.label1.Size = new System.Drawing.Size(238, 31);
+      this.label1.Size = new System.Drawing.Size(483, 31);
       this.label1.TabIndex = 0;
-      this.label1.Text = "Choose a method";
+      this.label1.Text = "Choose a method of weightLifting";
       // 
       // one
       // 

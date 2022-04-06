@@ -310,8 +310,9 @@ namespace Console_Game
       this.buttonGame.Name = "buttonGame";
       this.buttonGame.Size = new System.Drawing.Size(99, 82);
       this.buttonGame.TabIndex = 25;
-      this.buttonGame.Text = "Dice Game";
+      this.buttonGame.Text = "Card Game";
       this.buttonGame.UseVisualStyleBackColor = true;
+      this.buttonGame.Click += new System.EventHandler(this.buttonGame_Click);
       // 
       // labelDayT
       // 
@@ -345,9 +346,9 @@ namespace Console_Game
       this.labelName.AutoSize = true;
       this.labelName.Location = new System.Drawing.Point(219, 7);
       this.labelName.Name = "labelName";
-      this.labelName.Size = new System.Drawing.Size(38, 15);
+      this.labelName.Size = new System.Drawing.Size(39, 15);
       this.labelName.TabIndex = 29;
-      this.labelName.Text = "label2";
+      this.labelName.Text = "Name";
       // 
       // GameScreen
       // 
